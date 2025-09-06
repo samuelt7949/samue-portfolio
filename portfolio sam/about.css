@@ -1,0 +1,152 @@
+   body {
+        background-color: var(--bg-color);
+    }
+
+    :root {
+        --bg-color: #1f242d;
+        --f-color: #ffffff;
+        --hover-color: #d68910;
+        --color-button: #00e5e0;
+    }
+
+    .about {
+        padding: 5rem 0;
+        background-color: var(--bg-color);
+        color: white;
+    }
+
+    .about .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .about .container .text-about {
+        padding-top: 2rem;
+        /* animation: slideRightTextabout 3s ease-out forwards; */
+        width: 50%;
+    }
+
+    .about .container .text-about h2 {
+        /* animation: slideToph4h2about 3s ease-out forwards; */
+        font-size: 50px;
+    }
+
+    .about .container .text-about span {
+        color: var(--hover-color);
+    }
+
+    .about .container .text-about h4 {
+        /* animation: slideToph4h2about 3s ease-out forwards; */
+        font-size: 30px;
+    }
+
+
+    .about .container .text-about p {
+        max-width: 70%;
+        line-height: 1.6;
+        text-align: justify;
+    }
+
+    .about .container .text-about .btn {
+        width: fit-content;
+        margin-top: 3rem;
+        padding: 0.7rem 2rem;
+        font-size: 18px;
+        text-transform: capitalize;
+        font-weight: 600;
+        border-radius: 30px;
+        border: none;
+        background-color: var(--hover-color);
+        color: wheat;
+        box-shadow: 0 0 5px var(--hover-color), 0 0 5px var(--hover-color);
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+
+
+    .about .container .image-about {
+        width: 25%;
+        /* border-bottom: 20px solid var(--hover-color); */
+        padding: 2.5rem 0;
+        /* animation: slideLeftImgabout 3s ease-out forwards; */
+    }
+
+    .about .container .image-about img {
+        width: 100%;
+        animation: floatUpDown 3s ease-in-out infinite;
+        border: 1px solid black;
+        border-radius: 20px;
+        filter: drop-shadow(0 0 25px #e1ff00) drop-shadow(0 10px 15px rgba(0, 0, 0, 0.2));
+    }
+
+
+    .about .hidden {
+        opacity: 0;
+        transform: translateX(0);
+        transition: 1s ease-out;
+    }
+
+    .about .show {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .about .text-about.show {
+        animation: slideRightTextabout 3s ease-out forwards;
+    }
+
+    .about .image-about.show {
+        animation: slideLeftImgabout 3s ease-out forwards;
+    }
+
+    .about .text-about h2.show,
+    .about .text-about h4.show {
+        animation: slideToph4h2about 3s ease-in-out forwards;
+    }
+
+    /* ------------------animation-------------------------------- */
+
+    @keyframes slideLeftImgabout {
+        0% {
+            opacity: 0;
+            transform: translateX(-200px);
+            /* يبدأ من اليسار */
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+            /* يوصل لمكانه الطبيعي */
+        }
+    }
+
+
+    @keyframes slideToph4h2about {
+        0% {
+            opacity: 0;
+            transform: translateY(-40px);
+            /* يبدأ من اليسار */
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+            /* يوصل لمكانه الطبيعي */
+        }
+    }
+
+
+    @keyframes slideRightTextabout {
+        0% {
+            opacity: 0;
+            transform: translateX(200px);
+            /* يبدأ من اليسار */
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+            /* يوصل لمكانه الطبيعي */
+        }
+    }

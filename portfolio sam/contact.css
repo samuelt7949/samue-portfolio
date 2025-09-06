@@ -1,0 +1,113 @@
+
+.contact form{
+margin: auto;
+margin-bottom: 3rem;
+}
+
+.contact .contact-form {
+    background: hsl(0, 0%, 90%);
+    color: #333;
+    padding: 40px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--bg-color);
+    font-size: 28px;
+}
+
+.contact .form-group {
+    margin-bottom: 20px;
+}
+
+.contact label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--bg-color);
+    font-size: 15px;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #e1e5e9;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s;
+    background: #f8f9fa;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    outline: none;
+    border-color: var(--bg-color);
+    background: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(31, 36, 45, 0.1);
+}
+
+.contact textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.contact button {
+    width: 100%;
+    background: var(--bg-color);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 10px;
+}
+
+.contact button:hover {
+    background: #2a3340;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(31, 36, 45, 0.3);
+}
+
+.contact .success {
+    background: #d4edda;
+    color: #155724;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: none;
+    border: 1px solid #c3e6cb;
+    animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 480px) {
+    .contact .contact-form {
+        padding: 25px;
+        margin: 10px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}

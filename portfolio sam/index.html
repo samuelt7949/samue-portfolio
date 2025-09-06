@@ -1,0 +1,534 @@
+DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="skills.css">
+
+
+
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Portfolio</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav class="fixed-top navbar navbar-expand-lg w-100">
+                <div class="d-flex justify-content-between  align-items-center  w-100">
+
+                    <!-- Portfolio on the left -->
+                    <a class="navbar-brand " href="#"><span class="fw-medium fs-1 fw-medium">Port</span><span
+                            class="fs-4">folio</span></a>
+
+
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+
+
+                    <!-- Centered navigation links -->
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <div class="navbar-nav d-flex flex-row gap-3 fw-medium fs-">
+                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link" href="#about">About Me</a>
+                            <a class="nav-link" href="#projects">Projects</a>
+                            <a class="nav-link" href="#skills">Skills</a>
+                            <a class="nav-link" href="#contact">Contact Me</a>
+                        </div>
+
+
+                        <!-- GitHub icon on the right -->
+
+                    </div>
+                    <div class="git-hubb">
+                        <a href="" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+
+                    </div>
+
+
+                </div>
+            </nav>
+
+            <div class="main">
+                <div class="text">
+                    <h2 class="mb-3 fs-1">Hello, my name is</h2>
+                    <h1 class="mb-3 name">Tem <span>Samuel</span></h1>
+                    <h3 class="h3 fs-1">I'm <span id="typed-text"></span> Developer</h3>
+
+
+                    <div class="mylink mt-5">
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href="mailto:samueltem7949@gmail.com"><i class="fas fa-envelope"></i></a>
+                        <a href="" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href=""><i class="fas fa-camera"></i></a>
+                        <a href="" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+
+
+                    </div>
+
+                    <a href="" download class="btn">Download CV</a>
+
+
+                </div>
+                <div class="img mt-5">
+                    <img src="/portfolio sam/WhatsApp Image 2025-09-06 at 11.50.56_74dacc2e.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+
+
+    </header>
+
+    <article id="about" class="about">
+        <div class="container">
+            <div class="image-about hidden">
+                <img src="./WhatsApp Image 2025-09-06 at 11.50.40_539cc112.jpg" alt="">
+            </div>
+            <div class="text-about hidden">
+                <h2 class="h2 hidden">About <span>Me</span></h2>
+                <h4 class="h4 hidden">Front-End Developer</h4>
+                <p>
+                    Hi, I'm Tem Samuel, a passionate Front-End Developer with a solid background in creating
+                    responsive, user-friendly, and visually appealing web applications. I specialize in HTML, CSS,
+                    JavaScript, and React — and I’m always looking for ways to improve and grow as a developer.
+                </p>
+                <p>
+                    I have a strong eye for design, attention to detail, and a love for turning ideas into seamless
+                    interactive experiences. I enjoy writing clean, scalable, and well-documented code, and I believe in
+                    continuous learning to stay updated with the latest technologies and best practices in the field.
+                </p>
+                <p>
+                    Whether I'm collaborating in a team or working independently, I always aim to deliver high-quality
+                    work that solves real problems. My goal is to contribute to impactful projects and grow into a
+                    full-stack developer in the near future.
+                </p>
+                <!-- <p>
+                    Outside of coding, I enjoy learning new skills, exploring UI/UX design, and staying inspired by
+                    technology and creativity. Let’s connect and create something meaningful together!
+                </p> -->
+                <button class="btn">Read more</button>
+            </div>
+
+        </div>
+
+    </article>
+
+
+    <article id="projects" class="projects">
+        <h2 class="mb-5">Latest <span>Projects</span></h2>
+        <div class="cards-container">
+
+            <!-- كارت المشروع الأول -->
+            <div class="project-card" onclick="visitProject('project3')">
+                <img src="https://plus.unsplash.com/premium_photo-1684785618727-378a3a5e91c5?q=80&w=784&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Management System" class="card-image">
+
+                <div class="card-overlay">
+                    <h3 class="project-title">E-Commerce</h3>
+                    <button class="visit-button"
+                        onclick="window.open">
+                        Visit</button>
+
+                </div>
+
+                <div class="card-info">
+                    <div class="project-name">E-Commerce Store</div>
+                    <div class="project-description">Your one-stop shop for all your needs. Find the best deals and shop
+                        effortlessly with us.</div>
+                </div>
+            </div>
+
+
+            <!-- كارت المشروع الثاني -->
+            <div class="project-card" onclick="visitProject('project1')">
+                <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="مشروع التطبيق" class="card-image">
+
+                <div class="card-overlay">
+                    <h3 class="project-title">Burger Website</h3>
+                    <button class="visit-button"
+                        onclick="window.open">
+                        Visit
+                    </button>
+
+                </div>
+
+                <div class="card-info">
+                    <div class="project-name">Burger Website |</div>
+                    <div class="project-description">A stylish and interactive landing page for a burger restaurant
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- كارت المشروع الثالث -->
+            <div class="project-card" onclick="visitProject('project2')">
+                <img src="https://plus.unsplash.com/premium_photo-1681487870238-4a2dfddc6bcb?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Website" class="card-image">
+
+                <div class="card-overlay">
+                    <h3 class="project-title">TO DO List</h3>
+                    <button class="visit-button"
+                        onclick="window.open">
+                        Visit</button>
+                </div>
+
+                <div class="card-info">
+                    <div class="project-name">Task Manager</div>
+                    <div class="project-description">Manage your daily tasks easily with this clean and user-friendly
+                        to-do list</div>
+                </div>
+            </div>
+        </div>
+
+    </article>
+
+
+    <article id="skills" class="skills">
+        <h2 class="section-title animate-on-scroll">Skills</h2>
+        <p class="section-subtitle animate-on-scroll">My technical and professional experiences</p>
+
+        <div class="skills-grid">
+            <div class="skill-category animate-on-scroll">
+                <h3 class="category-title">Programming</h3>
+
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>JavaScript</span>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-percentage="90"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>React.js</span>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-percentage="85"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>C++</span>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-percentage="80"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Java</span>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-percentage="75"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category animate-on-scroll">
+                <h3 class="category-title">Design</h3>
+
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>UI/UX Design</span>
+                        <span class="skill-percentage">88%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-percentage="88"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Figma</span>
+                        <span class="skill-percentage">92%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-percentage="92"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Photoshop</span>
+                        <span class="skill-percentage">78%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-percentage="78"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>CSS3 & Animation</span>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-percentage="85"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category animate-on-scroll">
+                <h3 class="category-title"> Databases</h3>
+
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>MySQL</span>
+                        <span class="skill-percentage">82%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-percentage="82"></div>
+                    </div>
+                </div>
+
+                <!-- <div class="skill-item">
+                    <div class="skill-name">
+                        <span>MongoDB</span>
+                        <span class="skill-percentage">76%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-percentage="76"></div>
+                    </div>
+                </div> -->
+
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Firebase</span>
+                        <span class="skill-percentage">70%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-percentage="70"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category animate-on-scroll">
+                <h3 class="category-title"> Other skills</h3>
+
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Git & GitHub</span>
+                        <span class="skill-percentage">88%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-percentage="88"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Project Management</span>
+                        <span class="skill-percentage">84%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-percentage="84"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Problem Solving</span>
+                        <span class="skill-percentage">95%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-percentage="95"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+
+    <article id="contact" class="contact">
+        <div class="container">
+            <form class="contact-form" id="contactForm" action="https://formspree.io/f/mldwboad" method="POST">
+                <div id="successMsg" class="success">
+                    Message sent successfully!
+                </div>
+
+                <h2>Contact Me</h2>
+
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </article>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <!-- أولاً: تحميل مكتبة typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- بعدين: كود التهيئة -->
+    <script>
+        var typed = new Typed("#typed-text", {
+            strings: ["Front-End", "UI Designer", "React Lover"],
+            typeSpeed: 80,
+            backSpeed: 50,
+            backDelay: 1500,
+            loop: true
+        });
+    </script>
+    <script>
+        window.addEventListener('scroll', function () {
+            const text = document.querySelector('.text-about');
+            const image = document.querySelector('.image-about');
+            const h4 = document.querySelector('.h4');
+            const h2 = document.querySelector('.h2');
+
+            const triggerPoint = window.innerHeight - 100;
+
+            if (text.getBoundingClientRect().top < triggerPoint) {
+                text.classList.add('show');
+            }
+
+            if (image.getBoundingClientRect().top < triggerPoint) {
+                image.classList.add('show');
+            }
+
+            if (h4.getBoundingClientRect().top < triggerPoint) {
+                h4.classList.add('show');
+            }
+
+            if (h2.getBoundingClientRect().top < triggerPoint) {
+                h2.classList.add('show');
+            }
+        });
+
+
+    </script>
+
+    <script>
+        // Function to animate skills when they come into view
+        function animateSkills() {
+            // Reset all progress bars
+            const progressBars = document.querySelectorAll('.progress-fill');
+            progressBars.forEach(bar => {
+                bar.style.width = '0%';
+            });
+
+            // Animate skill items
+            const skillItems = document.querySelectorAll('.skill-item');
+            skillItems.forEach((item, index) => {
+                setTimeout(() => {
+                    item.classList.add('animate');
+
+                    // Animate progress bar
+                    const progressBar = item.querySelector('.progress-fill');
+                    const percentage = progressBar.getAttribute('data-percentage');
+
+                    setTimeout(() => {
+                        progressBar.style.width = percentage + '%';
+                    }, 200);
+                }, index * 150);
+            });
+        }
+
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function (entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+
+                    // If it's a skills section, animate the skills
+                    if (entry.target.classList.contains('skills-grid')) {
+                        setTimeout(() => {
+                            animateSkills();
+                        }, 500);
+                    }
+                }
+            });
+        }, observerOptions);
+
+        // Observe all elements with animate-on-scroll class
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Also observe the skills grid
+        observer.observe(document.querySelector('.skills-grid'));
+
+        // Hide scroll indicator after scroll
+        let scrollTimeout;
+        window.addEventListener('scroll', () => {
+            const indicator = document.querySelector('.scroll-indicator');
+            if (window.scrollY > 100) {
+                indicator.style.opacity = '0';
+                indicator.style.transform = 'translateX(50%) translateY(50px)';
+            }
+        });
+
+        // Initial animation on page load
+        setTimeout(() => {
+            document.querySelectorAll('.animate-on-scroll').forEach(el => {
+                el.classList.add('visible');
+            });
+        }, 500);
+    </script>
+
+</body>
+
+</html>
